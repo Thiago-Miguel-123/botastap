@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active"  href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="contato.html">contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Sobre.html">sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container row mt-3">
+  <h1>Novo Produto</h1>
+  <form class="row g-3">
+    <div class="col-md-5 col-sm-12">
+      <div class="form-floating">
+        <label for="nome">Nome do produto</label>
+        <input type="text" name="nome" id="nome" required class="form-control" placeholder="digite o nome do produto">
+      </div></div>
+
+
+    <div class="col-md-3 col-sm-12">
+      <div class="form-floating">
+        <label for="valor">Valor do produto</label>
+        <input type="number" name="valor" id="valor" step="0.5" required class="form-control" placeholder="digite o valor do produto">
+      </div></div>
+
+    <div class="col-md-3 col-sm-12">
+      <div class="form-floating">
+        <label for="qtd">Quantidade</label>
+        <input type="number" name="qtd" id="qtd" required class="form-control" placeholder="digite a quantidade de produtos">
+      </div></div>
+
+    <div class="col-md-4 col-sm-12"> 
+      <div class="form-floating">
+      <label for="categoria">Categoria</label>
+      <select name="categoria" id="categoria" class="form-select">
+        <option value="pele">doce</option>
+        <option value="osso">sagado</option>
+        <option value="carne">agridoce</option>
+        <option value="sangue">neutro</option>
+      </select>
+    </div></div>
+
+    <div class="col-md-4 col-sm-12">
+      <label class="form-check form-check-inline">Frabricado em:</label>
+      <div class="form-check form-check-inline">
+        <label for="sp">SP</label>
+        <input type="radio" name="fab" id="sp" class="form-check-input">
+      </div>
+      <div class="form-check form-check-inline">
+        <label for="rj">RJ</label>
+        <input type="radio" name="fab" id="rj" class="form-check-input">
+      </div>
+      <div class="form-check form-check-inline">
+        <label for="mg">MG</label>
+        <input type="radio" name="fab" id="mg" class="form-check-input">
+      </div>
+      
+    </div>
+
+    <div class="col-md-4 col-sm-12">
+      <button type="submit" class="btn btn-success">enviar</button>
+    </div>
+
+    </div>
+  </form>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html> 
